@@ -1,0 +1,93 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+	<bean id="crawler" class="com.bh25034.crawler.impl.CrawlerImpl">
+       <property name="mainURL" value="http://www.scorespro.com/soccer/england/premier-league/2015-2016/round-"/>
+       <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
+   	</bean>
+    
+    <bean id="crawlerMLS" class="com.bh25034.crawler.impl.CrawlerImplMLS">
+       <property name="mainURL" value="http://www.scorespro.com/soccer/usa/major-league-soccer/2015/major-league-soccer/"/>
+       <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
+   	</bean>
+    
+    <bean id="runner" class="com.bh25034.crawler.impl.RunnerImpl">
+       <property name="baseURL" value="http://www.scorespro.com/soccer/england/premier-league/2015-2016/round-"/>
+       <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
+       <property name="games" value="38"/>
+       <property name="waitTime" value="500"/>
+   	</bean>
+   	
+   	<bean id="runnerMLS" class="com.bh25034.crawler.impl.RunnerImplMLS">
+       <property name="baseURL" value="http://www.scorespro.com/soccer/usa/major-league-soccer/2015/major-league-soccer/"/>
+       <property name="baseKOURL" value="http://www.scorespro.com/soccer/usa/major-league-soccer/2015/mls-cup-play-offs/"/>
+       <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
+       <property name="months">
+		  <list value-type="java.lang.String">
+		    <value>March</value>
+		    <value>April</value>
+		    <value>May</value>
+		    <value>June</value>
+		    <value>July</value>
+		    <value>August</value>
+		    <value>September</value>
+		    <value>October</value>
+		  </list>
+	   </property>
+       <property name="waitTime" value="50"/>
+   	</bean>
+   	
+   	<bean id = "writer" class = "com.bh25034.csvwriter.CSVWriter">
+   		<property name="path" value="C:/temp/Test.csv"/>
+   		<property name="append" value="true"/>
+   	</bean>
+   	
+	<!-->bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.hxtt.sql.access.AccessDriver" />
+		<property name="url" value="jdbc:odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:/Users/BobHi/Documents/Workspace/Clutch/DB_CLUTCH.mdb" />
+		<property name="username" value="" />
+		<property name="password" value="" />
+	</bean-->
+
+	<!-- Hibernate 3 XML SessionFactory Bean definition-->
+	<!-- 	<bean id="hibernate3SessionFactory"
+			class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+			<property name="dataSource" ref="dataSource" />
+			<property name="mappingResources">
+				<list>
+					<value>person.hbm.xml</value>
+				</list>
+			</property>
+			<property name="hibernateProperties">
+				<value>
+					hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				</value>
+			</property>
+		</bean> -->
+	
+	<!-- Hibernate 3 Annotation SessionFactory Bean definition-->
+	<!-->bean id="hibernate3AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.annotation.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.bh25034.entities.Goal</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">com.hxtt.support.hibernate.HxttAccessDialect</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+	</bean-->
+	
+	<!-->bean id="goalDAOImpl" class="com.bh25034.dao.impl.GoalDAOImpl">
+		<property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
+	</bean-->
+    
+</beans>

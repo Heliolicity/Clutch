@@ -1,0 +1,41 @@
+Premier League 2012-2013
+2016-11-16T22:43:07.714Z: Started getting match reports
+2016-11-16T22:44:03.625Z: Finished getting match reports
+2016-11-16T22:44:03.625Z: Started getting goals
+Error getting data for http://www.scorespro.com/soccer/livescore/west-ham-vs-wigan-athletic/20-04-2013/
+HTTP error fetching URL
+2016-11-16T22:50:57.187Z: Finished getting goals
+
+Premier League 2013-2014
+2016-11-16T22:52:26.847Z: Started getting match reports
+2016-11-16T22:53:04.271Z: Finished getting match reports
+2016-11-16T22:53:04.271Z: Started getting goals
+Error getting data for http://www.scorespro.com/soccer/livescore/cardiff-city-vs-manchester-united/24-11-2013/
+HTTP error fetching URL
+Error getting data for http://www.scorespro.com/soccer/livescore/arsenal-fc-vs-chelsea-fc/23-12-2013/
+HTTP error fetching URL
+2016-11-16T23:02:17.603Z: Finished getting goals
+
+Premier League 2014-2015
+2016-11-16T23:03:55.077Z: Started getting match reports
+2016-11-16T23:04:15.975Z: Finished getting match reports
+2016-11-16T23:04:15.976Z: Started getting goals
+Error getting data for http://www.scorespro.com/soccer/livescore/leicester-city-vs-liverpool-fc/02-12-2014/
+HTTP error fetching URL
+Error getting data for http://www.scorespro.com/soccer/livescore/swansea-vs-west-ham/10-01-2015/
+HTTP error fetching URL
+Error getting data for http://www.scorespro.com/soccer/livescore/swansea-vs-sunderland-afc/07-02-2015/
+HTTP error fetching URL
+Error getting data for http://www.scorespro.com/soccer/livescore/liverpool-fc-vs-tottenham/10-02-2015/
+HTTP error fetching URL
+2016-11-16T23:13:40.310Z: Finished getting goals
+
+Premier League 2015-2016
+2016-11-16T23:15:33.935Z: Started getting match reports
+2016-11-16T23:15:53.752Z: Finished getting match reports
+2016-11-16T23:15:53.752Z: Started getting goals
+Error getting data for http://www.scorespro.com/soccer/livescore/manchester-city-vs-chelsea-fc/16-08-2015/
+HTTP error fetching URL
+Error getting data for http://www.scorespro.com/soccer/livescore/leicester-city-vs-southampton/03-04-2016/
+HTTP error fetching URL
+2016-11-16T23:23:18.679Z: Finished getting goals
