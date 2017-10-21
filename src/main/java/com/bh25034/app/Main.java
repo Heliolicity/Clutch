@@ -13,8 +13,8 @@ import com.bh25034.crawler.impl.CrawlerImplMLS;
 import com.bh25034.crawler.impl.RunnerImpl;
 import com.bh25034.crawler.impl.RunnerImplMLS;
 import com.bh25034.csvwriter.CSVWriter;
-//import com.bh25034.dao.GoalDAO;
-//import com.bh25034.dao.impl.GoalDAOImpl;
+import com.bh25034.dao.GoalDAO;
+import com.bh25034.dao.impl.GoalDAOImpl;
 
 public class Main {
 

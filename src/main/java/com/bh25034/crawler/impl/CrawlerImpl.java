@@ -185,7 +185,10 @@ public class CrawlerImpl implements Crawler {
 		    			dateTime = new DateTime(year, month, day, hour, minute);
 		    			//pl(dateTime.toString());
 		    			localTime = new LocalTime(hour, minute, 0);
-		    			test = text.substring(text.indexOf("Finished") + 8, text.indexOf("100% Bet Bonus")).trim();
+		    			pl(text);
+		    			//Bet365 ScoresPro.com
+		    			//test = text.substring(text.indexOf("Finished") + 8, text.indexOf("100% Bet Bonus")).trim();
+		    			test = text.substring(text.indexOf("Finished") + 8, text.indexOf("Bet365 ScoresPro.com")).trim();
 		    			//pl(test);
 		    			
 		    		}

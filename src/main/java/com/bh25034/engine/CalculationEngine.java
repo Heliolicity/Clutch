@@ -9,7 +9,7 @@ import com.bh25034.entities.Goal;
 import com.bh25034.entities.GoalType;
 
 public class CalculationEngine {
-
+	
 	private List<Goal> goals;
 	private List<GoalType> goalTypes;
 	
