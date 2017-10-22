@@ -4,7 +4,7 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
  
 	<bean id="crawler" class="com.bh25034.crawler.impl.CrawlerImpl">
-       <property name="mainURL" value="http://www.scorespro.com/soccer/england/premier-league/2016-2017/round-"/>
+       <property name="mainURL" value="https://www.scorespro.com/soccer/scotland/premiership/2016-2017/round-"/>
        <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
    	</bean>
     
@@ -14,7 +14,7 @@
    	</bean>
     
     <bean id="runner" class="com.bh25034.crawler.impl.RunnerImpl">
-       <property name="baseURL" value="http://www.scorespro.com/soccer/england/premier-league/2016-2017/round-"/>
+       <property name="baseURL" value="https://www.scorespro.com/soccer/scotland/premiership/2016-2017/round-"/>
        <property name="subURL" value="http://www.scorespro.com/soccer/livescore/"/>
        <property name="games" value="38"/>
        <property name="waitTime" value="500"/>
